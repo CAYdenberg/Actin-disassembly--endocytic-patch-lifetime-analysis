@@ -1,0 +1,101 @@
+<?xml version="1.0" ?>
+<svg height="600" version="1.1" width="800" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+	<style type="text/css">
+		
+
+.x-axis-path, .y-gridline, .x-notch { fill:none; stroke: #a7a9ac; stroke-width:1; }
+
+
+
+.y-gridline { stroke-width: 1; }
+
+.y-axis-path, .y-axis-path2, .x-notch-left, .x-notch-right { display: none;}
+
+
+
+.x-axis-label, .data-point-label {font-size: 12px; font-weight:normal; font-family: sans-serif; fill: #58595b; text-anchor:middle;}
+
+.y-axis-label {font-size: 12px; font-family: helvetica; fill: #a7a9ac; text-anchor:end;}
+
+
+
+.series-1-line { fill: none; stroke: #10b80c; stroke-width:2; }
+
+
+
+.series-2-line { fill: none; stroke: #e90f0a; stroke-width: 2;}
+
+	</style>
+	<rect fill="white" height="600" width="800" x="0" y="0"/>
+	<g id="grid" transform="translate(70, 30)">
+		<g class="x-axis" id="x_axis">
+			<path class="x-axis-path" d="M 0 525 L 660 525"/>
+			<path class="x-notch-left" d="M 0 525, L 0 535"/>
+			<path class="x-notch-right" d="M 660 525, L 660 535"/>
+		</g>
+		<g class="y-axis" id="y_axis">
+			<path class="y-axis-path" d="M 0 525 L 0 0"/>
+			<path class="y-axis-path-2" d="M 660 525 L 660 0"/>
+			<path class="y-gridline" d="M 0 525 L 660 525"/>
+			<text class="y-axis-label" x="-5" y="525">
+				-200
+			</text>
+			<path class="y-gridline" d="M 0 420 L 660 420"/>
+			<text class="y-axis-label" x="-5" y="420">
+				 0
+			</text>
+			<path class="y-gridline" d="M 0 315 L 660 315"/>
+			<text class="y-axis-label" x="-5" y="315">
+				200
+			</text>
+			<path class="y-gridline" d="M 0 210 L 660 210"/>
+			<text class="y-axis-label" x="-5" y="210">
+				400
+			</text>
+			<path class="y-gridline" d="M 0 105 L 660 105"/>
+			<text class="y-axis-label" x="-5" y="105">
+				600
+			</text>
+			<path class="y-gridline" d="M 0 0 L 660 0"/>
+			<text class="y-axis-label" x="-5" y="0">
+				800
+			</text>
+		</g>
+		<g>
+			<path class="series-1-line" d="M 40 448.056546 L 48 458.502812833 L 56 427.326029667 L 64 398.1144265 L 72 358.308953333 L 80 316.484120167 L 89 314.761097 L 97 269.974633833 L 105 253.793740667 L 113 268.7363175 L 121 210.285994333 L 129 214.028851167 L 138 235.203598 L 146 176.915604833 L 154 203.394531667 L 162 122.4370385 L 170 152.415825333 L 178 132.075252167 L 187 129.908079 L 195 162.821615833 L 203 119.825822667 L 211 67.2582295 L 219 49.5430763333 L 227 82.6718631667 L 236 70.44905 L 244 48.8031168333 L 252 51.2391436667 L 260 77.7050505 L 268 113.485717333 L 276 86.6435441667 L 285 97.762651 L 293 98.5705478333 L 301 81.6632646667 L 309 125.9655215 L 317 174.736158333 L 325 173.645865167 L 334 227.263302 L 342 214.232408833 L 350 185.612795667 L 358 189.7191625 L 366 226.765289333 L 374 260.958146167 L 383 356.131853 L 391 319.192879833 L 399 278.202166667 L 407 285.4041435 L 415 277.017610333 L 423 265.602667167 L 432 273.666064 L 440 384.320760833 L 448 367.574757667 L 456 402.7098845 L 464 411.473421333 L 472 434.950818167 L 481 387.889425 L 489 427.762571833 L 497 429.526388667 L 505 428.5167355 L 513 423.603392333 L 521 423.711359167 L 530 423.940076 L 538 435.678682833 L 546 446.568889667 L 554 430.4423865 L 562 441.588583333 L 570 423.765700167 L 579 415.258207 L 587 415.904403833 L 595 423.698790667 L 603 424.3181075 L 611 420.791394333 L 620 429.824151167"/>
+			<path class="series-2-line" d="M 40 420.735 L 48 420.81375 L 56 423.5175 L 64 406.27125 L 72 424.2 L 80 429.52875 L 89 423.8325 L 97 420.23625 L 105 397.215 L 113 412.51875 L 121 370.0725 L 129 412.67625 L 138 377.055 L 146 411.78375 L 154 408.7125 L 162 417.19125 L 170 400.47 L 178 371.14875 L 187 373.3275 L 195 369.73125 L 203 393.96 L 211 355.18875 L 219 366.8175 L 227 350.09625 L 236 364.875 L 244 375.45375 L 252 314.6325 L 260 354.61125 L 268 333.69 L 276 335.86875 L 285 312.8475 L 293 321.85125 L 301 350.805 L 309 372.40875 L 317 311.0625 L 325 309.04125 L 334 310.695 L 342 287.67375 L 350 239.4525 L 358 286.78125 L 366 273.21 L 374 315.81375 L 383 366.2925 L 391 305.47125 L 399 262.5 L 407 256.80375 L 415 246.3825 L 423 278.48625 L 432 261.24 L 440 333.24375 L 448 336.9975 L 456 375.92625 L 464 372.33 L 472 407.58375 L 481 410.8125 L 489 406.69125 L 497 430.395 L 505 415.77375 L 513 416.3775 L 521 432.20625 L 530 408.66 L 538 411.88875 L 546 383.6175 L 554 413.62125 L 562 406.875 L 570 414.82875 L 579 423.3075 L 587 416.56125 L 595 420.84 L 603 418.29375 L 611 427.8225 L 620 423.17625"/>
+		</g>
+		<text class="x-axis-label" x="40.0" y="540">
+			0
+		</text>
+		<path class="x-notch" d="M 80.8450704225 525 L 80.8450704225 530"/>
+		<text class="x-axis-label" x="121.690140845" y="540">
+			10
+		</text>
+		<path class="x-notch" d="M 162.535211268 525 L 162.535211268 530"/>
+		<text class="x-axis-label" x="203.38028169" y="540">
+			20
+		</text>
+		<path class="x-notch" d="M 244.225352113 525 L 244.225352113 530"/>
+		<text class="x-axis-label" x="285.070422535" y="540">
+			30
+		</text>
+		<path class="x-notch" d="M 325.915492958 525 L 325.915492958 530"/>
+		<text class="x-axis-label" x="366.76056338" y="540">
+			40
+		</text>
+		<path class="x-notch" d="M 407.605633803 525 L 407.605633803 530"/>
+		<text class="x-axis-label" x="448.450704225" y="540">
+			50
+		</text>
+		<path class="x-notch" d="M 489.295774648 525 L 489.295774648 530"/>
+		<text class="x-axis-label" x="530.14084507" y="540">
+			60
+		</text>
+		<path class="x-notch" d="M 570.985915493 525 L 570.985915493 530"/>
+		<text class="x-axis-label" x="611.830985915" y="540">
+			70
+		</text>
+		<path class="x-notch" d="M 652.676056338 525 L 652.676056338 530"/>
+	</g>
+</svg>
