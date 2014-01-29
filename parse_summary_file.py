@@ -34,10 +34,12 @@ def WriteToFile(Series, Headings, OutFileName):
 InFileName = 'process_patch.txt'
 InFile = open(InFileName, 'r')
 Strains = []
+#each dictionary will be indexed by Strain and will contain
+#lists containing all the data
 ActinLifetimes = {}
 CofilinLifetimes = {}
 Delays = {}
-CofInt = {}
+CumulInt = {}
 LineNum = 0
 for Line in InFile:
   if LineNum == 0:
@@ -52,28 +54,27 @@ for Line in InFile:
     ActinLifetimes[Strain] = []
     CofilinLifetimes[Strain] = []
     Delays[Strain] = []
-    CofInt[Strain] = []
+    CumulInt[Strain] = []
   ActinLifetimes[Strain].append(DataList[1])
   if DataList[2]:
-    CofPercent_flt = float( DataList[2] ) #/ float( DataList[1] )
-    CofPercent_str = str(CofPercent_flt)
-    CofilinLifetimes[Strain].append(CofPercent_str)
+    CofilinLifetimes[Strain].append(DataList[2])
   if DataList[3]:
-    DelayPercent_flt = float( DataList[3] ) #/ float( DataList[1] )
-    DelayPercent_str = str(DelayPercent_flt)
-    Delays[Strain].append(DelayPercent_str)
-  CofInt[Strain].append( DataList[5] )
+    Delays[Strain].append(DataList[3])
+  if DataList[4]:
+    CumulInt[Strain].append(DataList[4])
   LineNum = LineNum + 1
+
+InFile.close()
+
+#sort all the lists
 for Strain in Strains:
   ActinLifetimes[Strain].sort()
   CofilinLifetimes[Strain].sort()
   Delays[Strain].sort()
-  CofInt[Strain].sort()
-InFile.close()
-
-print len(ActinLifetimes['CY280'])
+  CumulInt[Strain].sort()
 
 Strains.sort()
 WriteToFile(ActinLifetimes, Strains, 'actin_lifetimes.txt')
 WriteToFile(CofilinLifetimes, Strains, 'cofilin_absolute.txt')
-WriteToFile(Delays, Strains, 'delay_absolute.txt')
+WriteToFile(Delays, Strains, 'delay_absolute.txt')
+WriteToFile(CumulInt, Strains, 'cofilin_intensity_score.txt')
