@@ -71,12 +71,12 @@ class Strain(object):
       for File in self.files:
         try:
           #change to [-x] to align at end
-          Data488.append(File.corr488[-x])
+          Data488.append(File.corr488[x])
         except:
           continue
         if File.containsCofData == True:
           #change to [-x] to align at end
-          Data561.append(File.corr561[-x])
+          Data561.append(File.corr561[x])
       if len(Data488) > 2:
         self.corr488avg.append(Average(Data488))
         self.corr488sem.append(StandardDeviation(Data488)/ math.sqrt(len(Data488)))
