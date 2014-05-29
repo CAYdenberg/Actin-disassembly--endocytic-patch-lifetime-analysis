@@ -74,11 +74,6 @@ def MakeChart(FileName, GreenSeries, RedSeries):
   )
   chart.output('svg/' + FileName)
 
-#####
-#possible alt algorithm:
-#compare avg positive value in the streak with
-#avg residual value for all other data points
-#perform t-test
 def FilterChannel(Data):
   Min = min(Data)
   Max = max(Data)
@@ -120,7 +115,7 @@ def ParseFile(Path):
   act488 = []
   act561 = []
   
-  #note that this represents the datapoint at which the 48 hits its peak
+  #this represents the datapoint at which the 488 hits its peak
   peak488 = 0
   
   for Line in InFile:
